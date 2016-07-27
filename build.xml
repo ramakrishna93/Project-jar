@@ -14,7 +14,7 @@
 	        <jar destfile="dist/HelloWorld.jar" basedir="build/classes" />
 	</target>
 	
-	<target name="execute" depends="compile">
+	<target name="execute" depends="clean,compile">
 		<java classname="com.vaannila.helloworld.HelloWorld" classpath="build/classes" />
 	</target>
 
