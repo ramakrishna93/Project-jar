@@ -1,7 +1,7 @@
 <?xml version="1.0" ?> 
 <project name="HelloWorld" default="compress">
 
-	<target name="init"depends="clean">
+	<target name="init" depends="clean">
 		<mkdir dir="build/classes" />
 		<mkdir dir="dist" />
 	</target>
