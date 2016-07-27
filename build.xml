@@ -1,12 +1,12 @@
 <?xml version="1.0" ?> 
 <project name="HelloWorld" default="compress">
 
-	<target name="init" depends="clean">
+	<target name="init" >
 		<mkdir dir="build/classes" />
 		<mkdir dir="dist" />
 	</target>
 
-	<target name="compile" depends="init">
+	<target name="compile" depends="init,clean">
 		<javac srcdir="src" destdir="build/classes" />
 	</target>
 	
